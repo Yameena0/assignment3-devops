@@ -3,3 +3,4 @@
 # Kubernetes deployment
 # Minikube configuration
 # Health check endpoint
+# Docker networking
