@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-api
+  template:
+    metadata:
+      labels:
+        app: flask-api
+    spec:
+      containers:
+      - name: flask-api
+        image: app-flask-api:latest
+        imagePullPolicy: Never
+        env:
+        - name: DB_HOST
+          value: mysql
+        - name: DB_USER
+          value: flaskuser
+        - name: DB_PASSWORD
+          value: flaskpass
+        - name: DB_NAME
+          value: flaskdb
+        ports:
+        - containerPort: 5000
