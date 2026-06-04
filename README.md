@@ -4,3 +4,4 @@
 # Minikube configuration
 # Health check endpoint
 # Docker networking
+# Kubernetes services
