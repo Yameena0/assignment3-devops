@@ -2,3 +2,4 @@
 # Docker Compose setup
 # Kubernetes deployment
 # Minikube configuration
+# Health check endpoint
