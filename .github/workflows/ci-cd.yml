@@ -32,4 +32,4 @@ jobs:
         with:
           context: ./app/nginx
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/nginx-proxy:latest`
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/nginx-proxy:latest
